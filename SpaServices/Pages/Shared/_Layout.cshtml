@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Spa</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/css/site.css" rel="stylesheet" />
+
+    <link href="~/css/style.css" rel="stylesheet" />
+
+    <link href="~/css/StylePostManager.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar-header navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow">
+            <div class="div-header container-fluid">
+
+                <a class="navbar-brand font-monospace fw-bold" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/Img/Canhbuom.jpg" style="width: 50px; height: 50px;" class="rounded-circle">
+                </a>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <partial name="_PartialMenuTop" />
+                </div>
+                <div class="d-flex justify-content-end">
+                    @await Html.PartialAsync("_LoginPartial")
+                    <button class="navbar-toggler text-white text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+   
+        <div class="offcanvas offcanvas-start" style="padding-top: 70px;" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <partial name="_PartialMenuTopSmalll" />
+            </div>
+        </div>
+
+    </header>
+    <div class="fill-space">
+        @*<img src="~/signature/vietImage.png" />*@
+    </div>
+    <div class="main" id="main">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container-xl">
+            <i class="fa-brands fa-battle-net"></i> 2022 - Spa - <a asp-area="" asp-action="index" asp-controller="Home">Home</a>
+        </div>
+    </footer>
+    
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

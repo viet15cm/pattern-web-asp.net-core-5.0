@@ -1,0 +1,362 @@
+﻿.header-title-home {
+    height: 200px;
+    width: 100%;
+    /*background: #fafafa;*/
+    background-image: url("../Img/codeinfor.jpg");
+    text-align: center;
+    /*padding-top: 70px;*/
+    font-family: Monospace;
+    position: relative;
+    padding-top: 70px;
+    background-size: 100% 200px;
+}
+
+.header-title-post {
+    height: 170px;
+    width: 100%;
+    background: #fafafa;
+    text-align: center;
+    /* padding-top: 60px;*/
+    font-family: Monospace;
+    position: relative;
+    margin-bottom: 50px;
+}
+.header-title-post h3 {
+        position: absolute;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+        transform: translate(-50%, -50%);
+}
+
+.all-category{
+    margin: 20px;
+    
+}
+
+.navigation-bar {
+    position: absolute;
+    top: 100%; /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+    transform: translate(-50%, -50%);
+    /*box-shadow: 0px 0px 1px 1px;*/
+    font-family: Monospace;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-color: #ffeeee;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu-top-small-parent {
+    padding-top: 70px;
+}
+
+.menu-top-small-parent ul li a{
+   padding: 10px;
+   
+}
+
+.menu-top-small-parent ul li :hover {
+   background: #8376e1;
+   border-radius: 2px;
+   
+}
+.menu-top-small {
+    background-color: #4a33f2;
+    background: #4a33f2;
+}
+
+.fill-space {
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.fill-space img{
+    width: auto;
+    height: 70px;
+}
+
+
+.navbar-header {
+    /*background-color: #4a33f2;*/
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 70px;
+}
+
+/*.navbar-collapse ul li a:active {
+    background: #cfcbcb;
+}*/
+
+
+.field-validation-error {
+    color: #ff0000; 
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.categorysidebar ul li a {
+   
+    text-decoration: none;
+    color: black;
+    font-family: "Monospace";
+    display: block;
+
+  
+
+}
+
+.categorysidebar{
+}
+
+.categorysidebar ul li a:hover {
+    /*background: #e3e3e3;*/
+    cursor: pointer;
+    text-decoration: underline;
+}
+.categorysidebar ul li {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    list-style: none;
+    margin-bottom: 0px ;
+    padding-bottom: 0px;
+    
+
+}
+
+.categorysidebar ul li a{
+    padding: 6px 0px  6px  4px;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #292424;
+    font-size: 18px;
+   
+}
+.tree-mycollapse{
+   
+  width: 90%;
+   
+}
+
+.categorysidebar ul li span {
+    text-align: center;
+    width: 35px;
+    display: block;
+    padding-top: 6px;
+    font-size: 17px;
+}
+
+.db-category-uers{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   padding: 10px;
+}
+
+.liPostOne {
+    margin-left: 9px;
+}
+
+.liPostOne a {
+    text-align: center;
+}
+
+.categorysidebar ul {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+.mycollapse li a {
+    position : relative;
+}
+
+.mycollapse li a span {
+    right: 0px;
+    position: absolute;
+    top: 0px;  
+    color: red;
+}
+
+.mycollapse {
+    display: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+.myshow {
+    display: block;
+}
+
+
+
+.tree-mycollapse span::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+    display: inline-block;
+    /*  padding-right: 5px;*/
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+}
+
+.tree-mycollapse .myactive::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    display: inline-block;
+    /*   padding-right: 5px;*/
+    vertical-align: middle;
+    font-weight: 900;
+    color: #000000;
+}
+
+.validation-summary-errors ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+
+#container_picture { 
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 6px;
+}
+
+.image_container {
+    height: 120px;
+    width: 200px;
+    border-radius: 1px;
+    overflow: hidden;
+    margin: 10px;
+    border: 1px solid #cfcbcb;
+    padding: 5px;
+}
+
+    .image_container img {
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .image_container span {
+        top: -6px;
+        right: 8px;
+        color: red;
+        font-size: 28px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+.myActive-a{
+    border-radius: 3px;
+    background: #e3e3e3;
+}
+
+.bd-content {
+    min-height: 300px;
+    border-radius: 5px;
+    background: #fafafa;
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+   
+    background-color: white;
+   
+}
+
+
+.language {
+  color: white;
+  background-color: #1f4287;
+  padding: 12px 16px;
+  border-radius: 5px 5px 0 0;
+  text-align: right;
+}
+
+.code-wrapper {
+  position: relative;
+}
+
+.code-wrapper pre {
+  background-color: #071e3d;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 0 0 5px 5px;
+}
+
+#copy-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 7px;
+  background-color: #1f4287;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  opacity: 0;
+}
+
+#copy-button:hover {
+  background-color: #1f428790;
+}
+
+.code-wrapper:hover #copy-button {
+  opacity: 1;
+}
+
+#copy-success {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1f4287;
+  color: white;
+  padding: 16px 32px;
+  font-size: 24px;
+  border-radius: 5px;
+  display: none;
+}
+
+#copy-success.show-message {
+  display: inline-block;
+}
+
+.hljs {
+  background-color: transparent;
+}
+
+pre h5{
+    padding: 7px;
+    padding-left: 10px;
+
+    margin: 0;
+    
+    color: #964343;
+
+
+}
